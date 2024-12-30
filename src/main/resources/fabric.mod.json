@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "neomusic",
+	"version": "${version}",
+	"name": "Neo Music",
+	"description": "Brings about special music by SeargentReckless!",
+	"authors": [
+		"Evil_Notch & SeargentReckless"
+	],
+	"contact": {
+		"homepage": "https://foxepox.com/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/neomusic/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.evilnotch.neomusic.NeoMusic"
+		],
+		"fabric-datagen": [
+			"net.evilnotch.neomusic.NeoMusicDataGenerator"
+		],
+		"client": [
+			"net.evilnotch.neomusic.NeoMusicClient"
+		]
+	},
+	"mixins": [
+		"neomusic.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
