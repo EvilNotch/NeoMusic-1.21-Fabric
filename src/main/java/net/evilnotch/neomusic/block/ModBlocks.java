@@ -38,6 +38,7 @@ public class ModBlocks {
         });
     }
 }
+
 // Unknown error of inventory opening crashing the game; halting anymore progress.
 // Removed  private static Block registerBlock(String name, Block block){
 //-    registerBlock(name, block); **THIS RECURSIVE THANG!**
