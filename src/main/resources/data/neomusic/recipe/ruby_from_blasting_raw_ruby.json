@@ -1,0 +1,13 @@
+{
+  "type": "blasting",
+  "category": "misc",
+  "cookingTime": 245,
+  "experience": 0.75,
+  "group": "ruby",
+  "ingredient": {
+    "item": "neomusic.raw_ruby"
+  },
+  "result": {
+    "id": "neomusic.ruby"
+  }
+}

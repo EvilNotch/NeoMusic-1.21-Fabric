@@ -1,6 +1,5 @@
 package net.evilnotch.neomusic;
 
-import net.evilnotch.neomusic.block.ModBlocks;
 import net.evilnotch.neomusic.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -15,6 +14,5 @@ public class NeoMusic implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		ModItems.registerModItems();
-		ModBlocks.registerModBlocks();
 	}
 }

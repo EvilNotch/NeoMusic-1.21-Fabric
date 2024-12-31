@@ -11,6 +11,7 @@ import net.minecraft.item.PickaxeItem;
 import net.minecraft.registry.Registries;
 import net.minecraft.registry.Registry;
 import net.minecraft.sound.BlockSoundGroup;
+import net.minecraft.structure.StructureTemplate;
 import net.minecraft.util.Identifier;
 
 public class ModBlocks {
