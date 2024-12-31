@@ -5,9 +5,10 @@
   "experience": 0.75,
   "group": "ruby",
   "ingredient": {
-    "item": "neomusic.raw_ruby"
+    "item": "neomusic:raw_ruby"
   },
   "result": {
-    "id": "neomusic.ruby"
+    "id": "neomusic:ruby"
   }
 }
+//Make sure the ID is : not . to properly parse elements.

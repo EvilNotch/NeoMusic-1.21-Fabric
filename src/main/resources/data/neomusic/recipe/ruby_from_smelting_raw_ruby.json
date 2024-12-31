@@ -1,13 +1,13 @@
 {
-"type": "smelting",
+  "type": "smelting",
   "category": "misc",
   "cookingTime": 400,
   "experience": 0.5,
   "group": "ruby",
   "ingredient": {
-    "item": "neomusic.raw_ruby"
+    "item": "neomusic:raw_ruby"
   },
   "result": {
-    "id": "neomusic.ruby"
+    "id": "neomusic:ruby"
   }
 }
