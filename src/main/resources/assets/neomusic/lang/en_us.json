@@ -7,5 +7,15 @@
   "block.neomusic.deepslate_ruby_ore": "Deepslate Ruby Ore",
   "trim_material.neomusic.ruby": "Ruby Rider Material",
   "trim_pattern.neomusic.frutiger": "Pattern All Too Familiar!",
-  "itemgroup.neomusic.ruby_items": "Ruby Items"
+  "itemgroup.neomusic.ruby_items": "Ruby Items",
+  "painting.neomusic.amulet.title": "Amulet",
+  "painting.neomusic.amulet.author": "Mojang",
+  "painting.neomusic.notch_apple.title": "Notch Apple",
+  "painting.neomusic.notch_apple.author": "Mojang",
+  "painting.neomusic.young.title": "Once Young",
+  "painting.neomusic.young.author": "Mojang",
+  "painting.neomusic.older.title": "Older",
+  "painting.neomusic.older.author": "Mojang",
+  "painting.neomusic.herobrine.title": "§k48 65 72 6F 62 72 69 6E 65",
+  "painting.neomusic.herobrine.author": "§kEvil_Notch"
 }
