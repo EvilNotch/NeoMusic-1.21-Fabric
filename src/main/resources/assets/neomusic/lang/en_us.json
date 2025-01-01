@@ -1,8 +1,9 @@
 {
   "item.neomusic.raw_ruby": "Raw Ruby",
   "item.neomusic.ruby": "Ruby",
-  "item.neomusic.ruby_block": "Block of Ruby",
   "block.neomusic.ruby_block": "Block of Ruby",
+  "block.neomusic.ruby_ore": "Ruby Ore",
+  "block.neomusic.deepslate_ruby_ore": "Deepslate Ruby Ore",
   "trim_material.neomusic.ruby": "Ruby Rider Material",
   "trim_pattern.neomusic.frutiger": "Pattern All Too Familiar!"
 }

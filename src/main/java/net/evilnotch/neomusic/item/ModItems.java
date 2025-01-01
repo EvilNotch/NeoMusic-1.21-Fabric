@@ -16,6 +16,9 @@ public class ModItems {
     public static final Item RAW_RUBY = registerItem("raw_ruby", new Item(new Item.Settings()));
     public static final Item Ruby = registerItem("ruby", new Item(new Item.Settings()));
     public static final Item RUBY_BLOCK = registerItem("ruby_block", new BlockItem(ModBlocks.RUBY_BLOCK, new Item.Settings()));
+    public static final Item DEEPSLATE_RUBY_ORE = registerItem("deepslate_ruby_ore", new BlockItem(ModBlocks.DEEPSLATE_RUBY_ORE, new Item.Settings()));
+    public static final Item RUBY_ORE = registerItem("ruby_ore", new BlockItem(ModBlocks.RUBY_ORE, new Item.Settings()));
+
 
     private static Item registerItem(String name, Item item) {
         return Registry.register(Registries.ITEM, Identifier.of(NeoMusic.MOD_ID, name), item);
