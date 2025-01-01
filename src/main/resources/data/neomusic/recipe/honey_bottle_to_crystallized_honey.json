@@ -1,0 +1,13 @@
+{
+  "type": "smelting",
+  "category": "misc",
+  "cookingTime": 400,
+  "experience": 0.2,
+  "group": "honey",
+  "ingredient": {
+    "item": "minecraft:honey_bottle"
+  },
+  "result": {
+    "id": "neomusic:crystallized_honey"
+  }
+}

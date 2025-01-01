@@ -1,10 +1,9 @@
 package net.evilnotch.neomusic.block;
 
 import net.evilnotch.neomusic.NeoMusic;
+import net.evilnotch.neomusic.item.ModItems;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
-import net.minecraft.block.AbstractBlock;
-import net.minecraft.block.Block;
-import net.minecraft.block.ExperienceDroppingBlock;
+import net.minecraft.block.*;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -29,6 +28,25 @@ public class ModBlocks {
             new ExperienceDroppingBlock(UniformIntProvider.create(2, 5),
                     AbstractBlock.Settings.create().strength(4f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE)));
 
+//    public static final Block RUBY_STAIRS = registerBlock("ruby_stairs",
+//            new StairsBlock(ModBlocks.RUBY_BLOCK.getDefaultState(),
+//                    AbstractBlock.Settings.create().strength(4f).requiresTool()));
+//
+//    public static final Block RUBY_SLAB = registerBlock("ruby_slab",
+//            new SlabBlock(AbstractBlock.Settings.create().strength(4f).requiresTool()));
+//
+//    public static final Block RUBY_BUTTON = registerBlock("ruby_button",
+//            new ButtonBlock(BlockSetType.IRON, "40", AbstractBlock.Settings.create().strength(2f).requiresTool().noCollision()));
+//
+//    public static final Block RUBY_PRESSURE_PLATE = registerBlock("ruby_pressure_plate",
+//            new PressurePlateBlock(BlockSetType.IRON, AbstractBlock.Settings.create().strength(3f).requiresTool()));
+//
+//    public static final Block RUBY_DOOR = registerBlock("ruby_door",
+//            new DoorBlock(BlockSetType.IRON, AbstractBlock.Settings.create().strength(4f).requiresTool().nonOpaque()));
+//
+//    public static final Block RUBY_TRAPDOOR = registerBlock("ruby_trapdoor",
+//            new TrapdoorBlock(BlockSetType.IRON, AbstractBlock.Settings.create().strength(4f).requiresTool().nonOpaque()));
+
     private static Block registerBlock(String name, Block block){
         return Registry.register(Registries.BLOCK, Identifier.of(NeoMusic.MOD_ID, name), block);
     }
@@ -49,6 +67,10 @@ public class ModBlocks {
             fabricItemGroupEntries.add(ModBlocks.DEEPSLATE_RUBY_ORE);
             fabricItemGroupEntries.add(ModBlocks.RUBY_ORE);
         });
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(fabricItemGroupEntries -> {
+            fabricItemGroupEntries.add(ModItems.CRYSTALLIZED_HONEY);
+        });
     }
 }
 
@@ -57,5 +79,5 @@ public class ModBlocks {
 //-    registerBlock(name, block); **THIS RECURSIVE THANG!**
 //     return Registry.register(Registries.BLOCK, Identifier.of(NeoMusic.MOD_ID, name), block);
 //}
+// Solved!
 
-//Planned Release for Unreleased Blocks.
