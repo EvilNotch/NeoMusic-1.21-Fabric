@@ -4,6 +4,8 @@ import net.evilnotch.neomusic.NeoMusic;
 import net.evilnotch.neomusic.item.ModItems;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.block.*;
+import net.minecraft.block.entity.BlockEntityType;
+import net.minecraft.block.entity.ChestBlockEntity;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -28,6 +30,11 @@ public class ModBlocks {
             new ExperienceDroppingBlock(UniformIntProvider.create(2, 5),
                     AbstractBlock.Settings.create().strength(4f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE)));
 
+
+
+// public static final Block RUBY_CHEST = registerBlock("ruby_chest",
+//            new  ChestBlock(BlockEntityType<ChestBlock>? extends ChestBlockEntity>> AbstractChestBlock.Settings.create.strength(4f).requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+//
 //    public static final Block RUBY_STAIRS = registerBlock("ruby_stairs",
 //            new StairsBlock(ModBlocks.RUBY_BLOCK.getDefaultState(),
 //                    AbstractBlock.Settings.create().strength(4f).requiresTool()));
