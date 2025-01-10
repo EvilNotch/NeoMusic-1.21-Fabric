@@ -19,6 +19,9 @@ public class ModItems {
     public static final Item DEEPSLATE_RUBY_ORE = registerItem("deepslate_ruby_ore", new BlockItem(ModBlocks.DEEPSLATE_RUBY_ORE, new Item.Settings()));
     public static final Item RUBY_ORE = registerItem("ruby_ore", new BlockItem(ModBlocks.RUBY_ORE, new Item.Settings()));
     public static final Item CRYSTALLIZED_HONEY = registerItem("crystallized_honey", new Item(new Item.Settings().food(ModFoodComponents.CRYSTALLIZED_HONEY)));
+    public static final Item RUBY_SLAB = registerItem("ruby_slab", new BlockItem(ModBlocks.RUBY_SLAB, new Item.Settings()));
+    public static final Item RUBY_STAIRS = registerItem("ruby_stairs", new BlockItem(ModBlocks.RUBY_STAIRS, new Item.Settings()));
+    public static final Item RUBY_BUTTON = registerItem("ruby_button", new BlockItem(ModBlocks.RUBY_BUTTON, new Item.Settings()));
 
 
     private static Item registerItem(String name, Item item) {
