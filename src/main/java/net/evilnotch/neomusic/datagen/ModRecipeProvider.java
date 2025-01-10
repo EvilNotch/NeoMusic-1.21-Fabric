@@ -42,5 +42,6 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .criterion(hasItem(ModBlocks.RUBY_BLOCK), conditionsFromItem(ModBlocks.RUBY_BLOCK))
                 .offerTo(recipeExporter, Identifier.of(NeoMusic.MOD_ID, "ruby_block_to_rubies_via_crafting"));
 
+        offerSlabRecipe(recipeExporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.RUBY_SLAB, ModBlocks.RUBY_BLOCK);
     }
 }

@@ -21,7 +21,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.RUBY_BLOCK)
                 .add(ModBlocks.RUBY_SLAB)
                 .add(ModBlocks.RUBY_STAIRS)
-                .add(ModBlocks.RUBY_BUTTON);
+                .add(ModBlocks.RUBY_BUTTON)
+                .add(ModBlocks.RUBY_TRAPDOOR);
 
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
@@ -30,6 +31,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.DEEPSLATE_RUBY_ORE)
                 .add(ModBlocks.RUBY_SLAB)
                 .add(ModBlocks.RUBY_STAIRS)
-                .add(ModBlocks.RUBY_BUTTON);
+                .add(ModBlocks.RUBY_BUTTON)
+                .add(ModBlocks.RUBY_TRAPDOOR);
     }
 }

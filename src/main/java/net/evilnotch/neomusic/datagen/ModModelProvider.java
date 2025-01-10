@@ -22,6 +22,9 @@ public class ModModelProvider extends FabricModelProvider {
         RubyPool.slab(ModBlocks.RUBY_SLAB);
         RubyPool.stairs(ModBlocks.RUBY_STAIRS);
         RubyPool.button(ModBlocks.RUBY_BUTTON);
+
+
+        blockStateModelGenerator.registerTrapdoor(ModBlocks.RUBY_TRAPDOOR);
     }
 
     @Override
@@ -29,5 +32,6 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.RAW_RUBY, Models.GENERATED);
         itemModelGenerator.register(ModItems.Ruby, Models.GENERATED);
         itemModelGenerator.register(ModItems.CRYSTALLIZED_HONEY, Models.GENERATED);
+        itemModelGenerator.register(ModItems.REND_MUSIC_DISC, Models.GENERATED);
     }
 }

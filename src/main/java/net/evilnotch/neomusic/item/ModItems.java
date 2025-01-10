@@ -2,6 +2,7 @@ package net.evilnotch.neomusic.item;
 
 import net.evilnotch.neomusic.NeoMusic;
 import net.evilnotch.neomusic.block.ModBlocks;
+import net.evilnotch.neomusic.sound.ModSounds;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
@@ -22,6 +23,8 @@ public class ModItems {
     public static final Item RUBY_SLAB = registerItem("ruby_slab", new BlockItem(ModBlocks.RUBY_SLAB, new Item.Settings()));
     public static final Item RUBY_STAIRS = registerItem("ruby_stairs", new BlockItem(ModBlocks.RUBY_STAIRS, new Item.Settings()));
     public static final Item RUBY_BUTTON = registerItem("ruby_button", new BlockItem(ModBlocks.RUBY_BUTTON, new Item.Settings()));
+    public static final Item RUBY_TRAPDOOR = registerItem("ruby_trapdoor", new BlockItem(ModBlocks.RUBY_TRAPDOOR, new Item.Settings()));
+    public static final Item REND_MUSIC_DISC = registerItem("rend_music_disc", new Item(new Item.Settings().jukeboxPlayable(ModSounds.REND_KEY).maxCount(1)));
 
 
     private static Item registerItem(String name, Item item) {
@@ -35,6 +38,10 @@ public class ModItems {
             ItemGroupEvents.modifyEntriesEvent(ItemGroups.INGREDIENTS).register(fabricItemGroupEntries -> {
                 fabricItemGroupEntries.add(RAW_RUBY);
                 fabricItemGroupEntries.add(Ruby);
+        });
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(fabricItemGroupEntries -> {
+            fabricItemGroupEntries.add(ModItems.REND_MUSIC_DISC);
         });
     }
 }

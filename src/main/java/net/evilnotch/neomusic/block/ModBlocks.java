@@ -38,8 +38,10 @@ public class ModBlocks {
             new SlabBlock(AbstractBlock.Settings.create().strength(4f).requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
 
     public static final Block RUBY_BUTTON = registerBlock("ruby_button",
-            new ButtonBlock(BlockSetType.IRON, 40, AbstractBlock.Settings.create().strength(2f).requiresTool().noCollision().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+            new ButtonBlock(BlockSetType.IRON, 80, AbstractBlock.Settings.create().strength(2f).requiresTool().noCollision().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
 
+    public static final Block RUBY_TRAPDOOR = registerBlock("ruby_trapdoor",
+            new TrapdoorBlock(BlockSetType.IRON, AbstractBlock.Settings.create().nonOpaque().strength(4f).requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
 
 
 // public static final Block RUBY_CHEST = registerBlock("ruby_chest",
@@ -51,8 +53,6 @@ public class ModBlocks {
 //    public static final Block RUBY_DOOR = registerBlock("ruby_door",
 //            new DoorBlock(BlockSetType.IRON, AbstractBlock.Settings.create().strength(4f).requiresTool().nonOpaque()));
 //
-//    public static final Block RUBY_TRAPDOOR = registerBlock("ruby_trapdoor",
-//            new TrapdoorBlock(BlockSetType.IRON, AbstractBlock.Settings.create().strength(4f).requiresTool().nonOpaque()));
 
     private static Block registerBlock(String name, Block block){
         return Registry.register(Registries.BLOCK, Identifier.of(NeoMusic.MOD_ID, name), block);
@@ -68,6 +68,8 @@ public class ModBlocks {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.add(ModBlocks.RUBY_BLOCK);
+            fabricItemGroupEntries.add(ModBlocks.RUBY_STAIRS);
+            fabricItemGroupEntries.add(ModBlocks.RUBY_SLAB);
         });
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(fabricItemGroupEntries -> {
@@ -77,6 +79,10 @@ public class ModBlocks {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.add(ModItems.CRYSTALLIZED_HONEY);
+        });
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.REDSTONE).register(fabricItemGroupEntries -> {
+            fabricItemGroupEntries.add(ModBlocks.RUBY_BUTTON);
         });
     }
 }

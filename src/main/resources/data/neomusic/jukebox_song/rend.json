@@ -1,0 +1,8 @@
+{
+  "comparator_output": 14,
+  "description": {
+    "translate": "item.neomusic.rend_music_disc_desc"
+  },
+  "length_in_seconds": 209.0,
+  "sound_event": "neomusic:rend"
+}

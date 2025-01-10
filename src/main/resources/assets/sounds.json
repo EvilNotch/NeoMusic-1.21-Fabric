@@ -1,0 +1,10 @@
+{
+  "rend": {
+    "sounds": [
+      {
+        "name": "neomusic:rend",
+        "stream": true
+      }
+    ]
+  }
+}
