@@ -30,20 +30,20 @@ public class ModBlocks {
             new ExperienceDroppingBlock(UniformIntProvider.create(2, 5),
                     AbstractBlock.Settings.create().strength(4f).requiresTool().sounds(BlockSoundGroup.DEEPSLATE)));
 
+    public static final Block RUBY_STAIRS = registerBlock("ruby_stairs",
+            new StairsBlock(ModBlocks.RUBY_BLOCK.getDefaultState(),
+                    AbstractBlock.Settings.create().strength(4f).requiresTool()));
+
+    public static final Block RUBY_SLAB = registerBlock("ruby_slab",
+            new SlabBlock(AbstractBlock.Settings.create().strength(4f).requiresTool()));
+
+    public static final Block RUBY_BUTTON = registerBlock("ruby_button",
+            new ButtonBlock(BlockSetType.IRON, 40, AbstractBlock.Settings.create().strength(2f).requiresTool().noCollision()));
+
 
 
 // public static final Block RUBY_CHEST = registerBlock("ruby_chest",
 //            new  ChestBlock(BlockEntityType<ChestBlock>? extends ChestBlockEntity>> AbstractChestBlock.Settings.create.strength(4f).requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
-//
-//    public static final Block RUBY_STAIRS = registerBlock("ruby_stairs",
-//            new StairsBlock(ModBlocks.RUBY_BLOCK.getDefaultState(),
-//                    AbstractBlock.Settings.create().strength(4f).requiresTool()));
-//
-//    public static final Block RUBY_SLAB = registerBlock("ruby_slab",
-//            new SlabBlock(AbstractBlock.Settings.create().strength(4f).requiresTool()));
-//
-//    public static final Block RUBY_BUTTON = registerBlock("ruby_button",
-//            new ButtonBlock(BlockSetType.IRON, "40", AbstractBlock.Settings.create().strength(2f).requiresTool().noCollision()));
 //
 //    public static final Block RUBY_PRESSURE_PLATE = registerBlock("ruby_pressure_plate",
 //            new PressurePlateBlock(BlockSetType.IRON, AbstractBlock.Settings.create().strength(3f).requiresTool()));

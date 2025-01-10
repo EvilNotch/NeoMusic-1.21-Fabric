@@ -16,13 +16,20 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         getOrCreateTagBuilder(BlockTags.PICKAXE_MINEABLE)
-                .add(ModBlocks.RUBY_BLOCK)
                 .add(ModBlocks.RUBY_ORE)
-                .add(ModBlocks.DEEPSLATE_RUBY_ORE);
+                .add(ModBlocks.DEEPSLATE_RUBY_ORE)
+                .add(ModBlocks.RUBY_BLOCK)
+                .add(ModBlocks.RUBY_SLAB)
+                .add(ModBlocks.RUBY_STAIRS)
+                .add(ModBlocks.RUBY_BUTTON);
+
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.RUBY_BLOCK)
                 .add(ModBlocks.RUBY_ORE)
-                .add(ModBlocks.DEEPSLATE_RUBY_ORE);
+                .add(ModBlocks.DEEPSLATE_RUBY_ORE)
+                .add(ModBlocks.RUBY_SLAB)
+                .add(ModBlocks.RUBY_STAIRS)
+                .add(ModBlocks.RUBY_BUTTON);
     }
 }
