@@ -32,13 +32,13 @@ public class ModBlocks {
 
     public static final Block RUBY_STAIRS = registerBlock("ruby_stairs",
             new StairsBlock(ModBlocks.RUBY_BLOCK.getDefaultState(),
-                    AbstractBlock.Settings.create().strength(4f).requiresTool()));
+                    AbstractBlock.Settings.create().strength(4f).requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
 
     public static final Block RUBY_SLAB = registerBlock("ruby_slab",
-            new SlabBlock(AbstractBlock.Settings.create().strength(4f).requiresTool()));
+            new SlabBlock(AbstractBlock.Settings.create().strength(4f).requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
 
     public static final Block RUBY_BUTTON = registerBlock("ruby_button",
-            new ButtonBlock(BlockSetType.IRON, 40, AbstractBlock.Settings.create().strength(2f).requiresTool().noCollision()));
+            new ButtonBlock(BlockSetType.IRON, 40, AbstractBlock.Settings.create().strength(2f).requiresTool().noCollision().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
 
 
 
