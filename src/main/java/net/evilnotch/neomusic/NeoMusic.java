@@ -3,6 +3,7 @@ package net.evilnotch.neomusic;
 import net.evilnotch.neomusic.block.ModBlocks;
 import net.evilnotch.neomusic.item.ModItemGroups;
 import net.evilnotch.neomusic.item.ModItems;
+import net.evilnotch.neomusic.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -18,5 +19,6 @@ public class NeoMusic implements ModInitializer {
 		ModItemGroups.RegisterItemGroups();
 		ModItems.registerModItems();
 		ModBlocks.registerModBlocks();
+		ModWorldGeneration.generateModWorldGen();
 	}
 }

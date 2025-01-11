@@ -1,11 +1,9 @@
 package net.evilnotch.neomusic;
 
-import net.evilnotch.neomusic.datagen.ModBlockTagProvider;
-import net.evilnotch.neomusic.datagen.ModLootTableProvider;
-import net.evilnotch.neomusic.datagen.ModModelProvider;
-import net.evilnotch.neomusic.datagen.ModRecipeProvider;
+import net.evilnotch.neomusic.datagen.*;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataGenerator;
+import net.minecraft.registry.RegistryBuilder;
 
 public class NeoMusicDataGenerator implements DataGeneratorEntrypoint {
 	@Override
