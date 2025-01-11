@@ -22,6 +22,10 @@
   "painting.neomusic.older.author": "Mojang",
   "painting.neomusic.herobrine.title": "§k48 65 72 6F 62 72 69 6E 65",
   "painting.neomusic.herobrine.author": "§kEvil_Notch",
-  "item.neomusic.rend_music_disc": "Rend",
-  "item.neomusic.rend_music_disc_desc": "SargentReckless - Rend (CC0)"
+  "item.neomusic.mend_music_disc": "Mend",
+  "item.neomusic.mend_music_disc_desc": "SargentReckless - Mend (CC0)",
+  "item.neomusic.spark_music_disc": "Spark",
+  "item.neomusic.spark_music_disc_desc": "SargentReckless - Spark (CC0)",
+  "item.neomusic.fog_music_disc": "Fog",
+  "item.neomusic.fog_music_disc_desc": "SargentReckless - Fog (CC0)"
 }

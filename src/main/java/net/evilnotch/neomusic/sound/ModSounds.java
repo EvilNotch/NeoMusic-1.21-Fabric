@@ -11,8 +11,12 @@ import net.minecraft.util.Identifier;
 
 public class ModSounds {
 
-    public static final SoundEvent REND = registerSoundEvent("rend");
-    public static final RegistryKey<JukeboxSong> REND_KEY = RegistryKey.of(RegistryKeys.JUKEBOX_SONG, Identifier.of(NeoMusic.MOD_ID, "rend"));
+    public static final SoundEvent MEND = registerSoundEvent("mend");
+    public static final SoundEvent SPARK = registerSoundEvent("spark");
+    public static final SoundEvent FOG = registerSoundEvent("fog");
+    public static final RegistryKey<JukeboxSong> MEND_KEY = RegistryKey.of(RegistryKeys.JUKEBOX_SONG, Identifier.of(NeoMusic.MOD_ID, "mend"));
+    public static final RegistryKey<JukeboxSong> SPARK_KEY = RegistryKey.of(RegistryKeys.JUKEBOX_SONG, Identifier.of(NeoMusic.MOD_ID, "spark"));
+    public static final RegistryKey<JukeboxSong> FOG_KEY = RegistryKey.of(RegistryKeys.JUKEBOX_SONG, Identifier.of(NeoMusic.MOD_ID, "fog"));
 
 
     private static SoundEvent registerSoundEvent(String name) {

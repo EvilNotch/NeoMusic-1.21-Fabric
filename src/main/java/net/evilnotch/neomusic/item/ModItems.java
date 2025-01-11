@@ -24,7 +24,9 @@ public class ModItems {
     public static final Item RUBY_STAIRS = registerItem("ruby_stairs", new BlockItem(ModBlocks.RUBY_STAIRS, new Item.Settings()));
     public static final Item RUBY_BUTTON = registerItem("ruby_button", new BlockItem(ModBlocks.RUBY_BUTTON, new Item.Settings()));
     public static final Item RUBY_TRAPDOOR = registerItem("ruby_trapdoor", new BlockItem(ModBlocks.RUBY_TRAPDOOR, new Item.Settings()));
-    public static final Item REND_MUSIC_DISC = registerItem("rend_music_disc", new Item(new Item.Settings().jukeboxPlayable(ModSounds.REND_KEY).maxCount(1)));
+    public static final Item MEND_MUSIC_DISC = registerItem("mend_music_disc", new Item(new Item.Settings().jukeboxPlayable(ModSounds.MEND_KEY).maxCount(1)));
+    public static final Item SPARK_MUSIC_DISC = registerItem("spark_music_disc", new Item(new Item.Settings().jukeboxPlayable(ModSounds.SPARK_KEY).maxCount(1)));
+    public static final Item FOG_MUSIC_DISC = registerItem("fog_music_disc", new Item(new Item.Settings().jukeboxPlayable(ModSounds.FOG_KEY).maxCount(1)));
 
 
     private static Item registerItem(String name, Item item) {
@@ -40,8 +42,10 @@ public class ModItems {
                 fabricItemGroupEntries.add(Ruby);
         });
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FUNCTIONAL).register(fabricItemGroupEntries -> {
-            fabricItemGroupEntries.add(ModItems.REND_MUSIC_DISC);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(fabricItemGroupEntries -> {
+            fabricItemGroupEntries.add(ModItems.MEND_MUSIC_DISC);
+            fabricItemGroupEntries.add(ModItems.SPARK_MUSIC_DISC);
+            fabricItemGroupEntries.add(ModItems.FOG_MUSIC_DISC);
         });
     }
 }

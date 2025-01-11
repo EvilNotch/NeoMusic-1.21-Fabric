@@ -1,8 +1,24 @@
 {
-  "rend": {
+  "mend": {
     "sounds": [
       {
-        "name": "neomusic:rend",
+        "name": "neomusic:mend",
+        "stream": true
+      }
+    ]
+  },
+  "spark": {
+    "sounds": [
+      {
+        "name": "neomusic:spark",
+        "stream": true
+      }
+    ]
+  },
+  "fog": {
+    "sounds": [
+      {
+        "name": "neomusic:fog",
         "stream": true
       }
     ]

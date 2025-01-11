@@ -1,0 +1,8 @@
+{
+  "comparator_output": 1,
+  "description": {
+    "translate": "item.neomusic.fog_music_disc_desc"
+  },
+  "length_in_seconds": 226.0,
+  "sound_event": "neomusic:fog"
+}

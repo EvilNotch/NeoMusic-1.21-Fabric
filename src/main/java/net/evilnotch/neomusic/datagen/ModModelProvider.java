@@ -32,6 +32,8 @@ public class ModModelProvider extends FabricModelProvider {
         itemModelGenerator.register(ModItems.RAW_RUBY, Models.GENERATED);
         itemModelGenerator.register(ModItems.Ruby, Models.GENERATED);
         itemModelGenerator.register(ModItems.CRYSTALLIZED_HONEY, Models.GENERATED);
-        itemModelGenerator.register(ModItems.REND_MUSIC_DISC, Models.GENERATED);
+        itemModelGenerator.register(ModItems.MEND_MUSIC_DISC, Models.GENERATED);
+        itemModelGenerator.register(ModItems.SPARK_MUSIC_DISC, Models.GENERATED);
+        itemModelGenerator.register(ModItems.FOG_MUSIC_DISC, Models.GENERATED);
     }
 }
