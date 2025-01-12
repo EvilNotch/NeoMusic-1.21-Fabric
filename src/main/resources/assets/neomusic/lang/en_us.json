@@ -1,6 +1,7 @@
 {
   "item.neomusic.raw_ruby": "Raw Ruby",
   "item.neomusic.ruby": "Ruby",
+  "tooltip.neomusic.ruby.tooltip": "§4The most precious of gems.",
   "item.neomusic.crystallized_honey": "Crystallized Honey",
   "block.neomusic.ruby_block": "Block of Ruby",
   "block.neomusic.ruby_ore": "Ruby Ore",
@@ -27,5 +28,6 @@
   "item.neomusic.spark_music_disc": "Spark",
   "item.neomusic.spark_music_disc_desc": "SargentReckless - Spark (CC0)",
   "item.neomusic.fog_music_disc": "Fog",
-  "item.neomusic.fog_music_disc_desc": "SargentReckless - Fog (CC0)"
+  "item.neomusic.fog_music_disc_desc": "SargentReckless - Fog (CC0)",
+  "item.neomusic.hellfire_alliance_chestplate": "Hellfire Alliance Chestplate"
 }
