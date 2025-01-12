@@ -70,6 +70,7 @@ public class ModBlocks {
             fabricItemGroupEntries.add(ModBlocks.RUBY_BLOCK);
             fabricItemGroupEntries.add(ModBlocks.RUBY_STAIRS);
             fabricItemGroupEntries.add(ModBlocks.RUBY_SLAB);
+            fabricItemGroupEntries.add(ModBlocks.RUBY_TRAPDOOR);
         });
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(fabricItemGroupEntries -> {
@@ -83,6 +84,7 @@ public class ModBlocks {
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.REDSTONE).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.add(ModBlocks.RUBY_BUTTON);
+            fabricItemGroupEntries.add(ModBlocks.RUBY_TRAPDOOR);
         });
     }
 }

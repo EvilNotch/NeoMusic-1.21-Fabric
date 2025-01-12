@@ -23,6 +23,7 @@ public class ModItemGroups {
                         entries.add(ModBlocks.RUBY_BLOCK);
                         entries.add(ModBlocks.RUBY_SLAB);
                         entries.add(ModBlocks.RUBY_STAIRS);
+                        entries.add(ModBlocks.RUBY_TRAPDOOR);
                         entries.add(ModBlocks.RUBY_BUTTON);
                     }).build());
 
