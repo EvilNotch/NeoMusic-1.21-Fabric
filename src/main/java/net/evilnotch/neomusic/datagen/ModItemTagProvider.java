@@ -21,7 +21,8 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
                 .add(ModItems.HELLFIRE_ALLIANCE_CHESTPLATE);
 
         getOrCreateTagBuilder(ItemTags.PIGLIN_LOVED)
-                .add(ModItems.HELLFIRE_ALLIANCE_CHESTPLATE);
+                .add(ModItems.HELLFIRE_ALLIANCE_CHESTPLATE)
+                .add(ModItems.Ruby);
 
         getOrCreateTagBuilder(ItemTags.BEE_FOOD)
                 .add(ModItems.CRYSTALLIZED_HONEY);
