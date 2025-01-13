@@ -26,5 +26,11 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
 
         getOrCreateTagBuilder(ItemTags.BEE_FOOD)
                 .add(ModItems.CRYSTALLIZED_HONEY);
+
+        getOrCreateTagBuilder(ItemTags.BEACON_PAYMENT_ITEMS)
+                .add(ModItems.Ruby);
+
+        getOrCreateTagBuilder(ItemTags.TRIM_MATERIALS)
+                .add(ModItems.Ruby);
     }
 }

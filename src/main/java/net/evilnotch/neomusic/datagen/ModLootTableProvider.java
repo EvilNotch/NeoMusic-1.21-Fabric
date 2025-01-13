@@ -4,7 +4,9 @@ import net.evilnotch.neomusic.block.ModBlocks;
 import net.evilnotch.neomusic.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
+import net.fabricmc.fabric.api.loot.v3.LootTableEvents;
 import net.minecraft.block.Block;
+import net.minecraft.data.server.loottable.vanilla.VanillaChestLootTableGenerator;
 import net.minecraft.enchantment.Enchantment;
 import net.minecraft.enchantment.Enchantments;
 import net.minecraft.item.Item;
@@ -17,6 +19,7 @@ import net.minecraft.loot.function.SetCountLootFunction;
 import net.minecraft.loot.provider.number.UniformLootNumberProvider;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
+import net.minecraft.resource.ResourceManager;
 
 import java.util.concurrent.CompletableFuture;
 
@@ -37,6 +40,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.RUBY_BUTTON);
 
         addDrop(ModBlocks.RUBY_TRAPDOOR);
+
 
     }
     public LootTable.Builder multipleOreDrops(Block drop, Item item, float minDrops, float maxDrops) {
