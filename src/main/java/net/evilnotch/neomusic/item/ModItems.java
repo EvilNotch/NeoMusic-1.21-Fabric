@@ -70,6 +70,10 @@ public class ModItems {
     public static final Item SPARK_MUSIC_DISC = registerItem("spark_music_disc", new Item(new Item.Settings().jukeboxPlayable(ModSounds.SPARK_KEY).maxCount(1)));
     public static final Item FOG_MUSIC_DISC = registerItem("fog_music_disc", new Item(new Item.Settings().jukeboxPlayable(ModSounds.FOG_KEY).maxCount(1)));
     public static final Item HELLFIRE_ALLIANCE_CHESTPLATE = registerItem("hellfire_alliance_chestplate", new ArmorItem(ModArmorMaterials.HELLFIRE_ALLIANCE_ARMOR_MATERIAL, ArmorItem.Type.CHESTPLATE, new Item.Settings().maxDamage(ArmorItem.Type.CHESTPLATE.getMaxDamage(12))));
+    public static final Item EMERALD_STAIRS = registerItem("emerald_stairs", new BlockItem(ModBlocks.EMERALD_STAIRS, new Item.Settings()));
+    public static final Item EMERALD_SLAB = registerItem("emerald_slab", new BlockItem(ModBlocks.EMERALD_SLAB, new Item.Settings()));
+    public static final Item RUBY_PRESSURE_PLATE = registerItem("ruby_pressure_plate", new BlockItem(ModBlocks.RUBY_PRESSURE_PLATE, new Item.Settings()));
+    public static final Item RUBY_LADDER = registerItem("ruby_ladder", new BlockItem(ModBlocks.RUBY_LADDER, new Item.Settings()));
 
 
     private static Item registerItem(String name, Item item) {

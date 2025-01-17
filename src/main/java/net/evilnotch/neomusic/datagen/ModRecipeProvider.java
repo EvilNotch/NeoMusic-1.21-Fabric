@@ -53,6 +53,7 @@ public class ModRecipeProvider extends FabricRecipeProvider {
 
         offerSlabRecipe(recipeExporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.RUBY_SLAB, ModBlocks.RUBY_BLOCK);
         offerSlabRecipe(recipeExporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.NETHERITE_SLAB, Blocks.NETHERITE_BLOCK);
+        offerSlabRecipe(recipeExporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.EMERALD_SLAB, Blocks.EMERALD_BLOCK);
         offerSlabRecipe(recipeExporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.WHITE_CONCRETE_SLAB, Blocks.WHITE_CONCRETE);
         offerSlabRecipe(recipeExporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.ORANGE_CONCRETE_SLAB, Blocks.ORANGE_CONCRETE);
         offerSlabRecipe(recipeExporter, RecipeCategory.BUILDING_BLOCKS, ModBlocks.MAGENTA_CONCRETE_SLAB, Blocks.MAGENTA_CONCRETE);
@@ -77,6 +78,10 @@ public class ModRecipeProvider extends FabricRecipeProvider {
         createStairsRecipe(ModBlocks.NETHERITE_STAIRS, Ingredient.ofItems(Blocks.NETHERITE_BLOCK))
                 .criterion(hasItem(Blocks.NETHERITE_BLOCK), conditionsFromItem(Blocks.NETHERITE_BLOCK))
                 .offerTo(recipeExporter, Identifier.of(NeoMusic.MOD_ID, "netherite_block_to_netherite_stairs"));
+
+        createStairsRecipe(ModBlocks.EMERALD_STAIRS, Ingredient.ofItems(Blocks.EMERALD_BLOCK))
+                .criterion(hasItem(Blocks.EMERALD_BLOCK), conditionsFromItem(Blocks.EMERALD_BLOCK))
+                .offerTo(recipeExporter, Identifier.of(NeoMusic.MOD_ID, "emerald_block_to_emerald_stairs"));
 
         createStairsRecipe(ModBlocks.WHITE_CONCRETE_STAIRS, Ingredient.ofItems(Blocks.WHITE_CONCRETE))
                 .criterion(hasItem(Blocks.WHITE_CONCRETE), conditionsFromItem(Blocks.WHITE_CONCRETE))
@@ -155,6 +160,8 @@ public class ModRecipeProvider extends FabricRecipeProvider {
                 .input('L', Items.LAPIS_LAZULI)
                 .criterion(hasItem(ModItems.Ruby), conditionsFromItem(ModItems.Ruby))
                 .offerTo(recipeExporter, Identifier.of(NeoMusic.MOD_ID, "hellfire_alliance_chestplate_recipe"));
+
+        offerPressurePlateRecipe(recipeExporter, ModBlocks.RUBY_PRESSURE_PLATE, ModBlocks.RUBY_BLOCK);
 
 
         List<ItemConvertible> HONEY_DEW = List.of(Items.HONEYCOMB);

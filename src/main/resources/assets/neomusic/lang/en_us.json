@@ -9,6 +9,8 @@
   "block.neomusic.ruby_stairs": "Ruby Stairs",
   "block.neomusic.netherite_stairs": "Swaggiest Stairs Ever",
   "block.neomusic.ruby_slab": "Ruby Slab",
+  "block.neomusic.emerald_slab": "Emerald Slab",
+  "block.neomusic.emerald_stairs": "Emerald Stairs",
   "block.neomusic.netherite_slab": "Swaggiest Slab Ever",
   "block.neomusic.ruby_button": "Ruby Button",
   "block.neomusic.ruby_trapdoor": "Ruby Trapdoor",
@@ -65,5 +67,12 @@
   "block.neomusic.brown_concrete_slab": "Brown Concrete Slab",
   "block.neomusic.green_concrete_slab": "Green Concrete Slab",
   "block.neomusic.red_concrete_slab": "Red Concrete Slab",
-  "block.neomusic.black_concrete_slab": "Black Concrete Slab"
+  "block.neomusic.black_concrete_slab": "Black Concrete Slab",
+
+  "block.metalized.netherite_stairs": "Swaggiest Stairs Ever",
+
+  "block.neomusic.ruby_pressure_plate": "Ruby Pressure Plate",
+  "block.neomusicc.ruby_ladder": "Ruby Ladder",
+
+  "itemgroup.neomusic.unused_items": "Unused Items"
 }

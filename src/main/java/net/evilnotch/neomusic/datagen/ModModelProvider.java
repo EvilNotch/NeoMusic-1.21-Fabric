@@ -4,7 +4,9 @@ import net.evilnotch.neomusic.block.ModBlocks;
 import net.evilnotch.neomusic.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
+import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Blocks;
+import net.minecraft.block.LadderBlock;
 import net.minecraft.data.client.BlockStateModelGenerator;
 import net.minecraft.data.client.ItemModelGenerator;
 import net.minecraft.data.client.Models;
@@ -24,9 +26,10 @@ public class ModModelProvider extends FabricModelProvider {
         RubyPool.slab(ModBlocks.RUBY_SLAB);
         RubyPool.stairs(ModBlocks.RUBY_STAIRS);
         RubyPool.button(ModBlocks.RUBY_BUTTON);
-
+        RubyPool.pressurePlate(ModBlocks.RUBY_PRESSURE_PLATE);
 
         blockStateModelGenerator.registerTrapdoor(ModBlocks.RUBY_TRAPDOOR);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RUBY_LADDER);
 
         BlockStateModelGenerator.BlockTexturePool NetheritePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.NETHERITE_BLOCK);
 
@@ -113,6 +116,10 @@ public class ModModelProvider extends FabricModelProvider {
         BlackConcretePool.stairs(ModBlocks.BLACK_CONCRETE_STAIRS);
         BlackConcretePool.slab(ModBlocks.BLACK_CONCRETE_SLAB);
 
+        BlockStateModelGenerator.BlockTexturePool EmeraldPool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.EMERALD_BLOCK);
+
+        EmeraldPool.stairs(ModBlocks.EMERALD_STAIRS);
+        EmeraldPool.slab(ModBlocks.EMERALD_SLAB);
     }
 
     @Override

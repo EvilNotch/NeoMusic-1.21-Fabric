@@ -56,7 +56,10 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.RED_CONCRETE_STAIRS)
                 .add(ModBlocks.RED_CONCRETE_SLAB)
                 .add(ModBlocks.BLACK_CONCRETE_STAIRS)
-                .add(ModBlocks.BLACK_CONCRETE_SLAB);
+                .add(ModBlocks.BLACK_CONCRETE_SLAB)
+                .add(ModBlocks.EMERALD_STAIRS)
+                .add(ModBlocks.EMERALD_SLAB)
+                .add(ModBlocks.RUBY_LADDER);
 
 
         getOrCreateTagBuilder(BlockTags.NEEDS_IRON_TOOL)
@@ -66,7 +69,10 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.RUBY_SLAB)
                 .add(ModBlocks.RUBY_STAIRS)
                 .add(ModBlocks.RUBY_BUTTON)
-                .add(ModBlocks.RUBY_TRAPDOOR);
+                .add(ModBlocks.RUBY_TRAPDOOR)
+                .add(ModBlocks.EMERALD_STAIRS)
+                .add(ModBlocks.EMERALD_SLAB)
+                .add(ModBlocks.RUBY_LADDER);
 
         getOrCreateTagBuilder(BlockTags.BEACON_BASE_BLOCKS)
                 .add(ModBlocks.RUBY_BLOCK);
@@ -108,5 +114,8 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
                 .add(ModBlocks.RED_CONCRETE_SLAB)
                 .add(ModBlocks.BLACK_CONCRETE_STAIRS)
                 .add(ModBlocks.BLACK_CONCRETE_SLAB);
+
+        getOrCreateTagBuilder(BlockTags.CLIMBABLE)
+                .add(ModBlocks.RUBY_LADDER);
     }
 }

@@ -34,6 +34,10 @@ public class ModBlocks {
             new StairsBlock(ModBlocks.RUBY_BLOCK.getDefaultState(),
                     AbstractBlock.Settings.create().strength(4f).hardness(25).resistance(250).requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
 
+    public static final Block EMERALD_STAIRS = registerBlock("emerald_stairs",
+            new StairsBlock(Blocks.EMERALD_BLOCK.getDefaultState(),
+                    AbstractBlock.Settings.create().strength(4f).hardness(25).resistance(250).requiresTool().sounds(BlockSoundGroup.METAL)));
+
     public static final Block WHITE_CONCRETE_STAIRS = registerBlock("white_concrete_stairs",
             new StairsBlock(Blocks.WHITE_CONCRETE.getDefaultState(),
                     AbstractBlock.Settings.create().strength(4f).hardness(15).resistance(100).requiresTool().sounds(BlockSoundGroup.STONE)));
@@ -105,6 +109,9 @@ public class ModBlocks {
     public static final Block RUBY_SLAB = registerBlock("ruby_slab",
             new SlabBlock(AbstractBlock.Settings.create().strength(4f).hardness(25).resistance(250).requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
 
+    public static final Block EMERALD_SLAB = registerBlock("emerald_slab",
+            new SlabBlock(AbstractBlock.Settings.create().strength(4f).hardness(25).resistance(250).requiresTool().sounds(BlockSoundGroup.METAL)));
+
     public static final Block WHITE_CONCRETE_SLAB = registerBlock("white_concrete_slab",
             new SlabBlock(AbstractBlock.Settings.create().strength(4f).hardness(15).resistance(100).requiresTool().sounds(BlockSoundGroup.STONE)));
 
@@ -162,12 +169,15 @@ public class ModBlocks {
     public static final Block RUBY_TRAPDOOR = registerBlock("ruby_trapdoor",
             new TrapdoorBlock(BlockSetType.COPPER, AbstractBlock.Settings.create().nonOpaque().strength(4f).hardness(25).resistance(250).requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
 
+        public static final Block RUBY_PRESSURE_PLATE = registerBlock("ruby_pressure_plate",
+            new PressurePlateBlock(BlockSetType.COPPER, AbstractPressurePlateBlock.Settings.create().strength(3f).requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+
+        public static final Block RUBY_LADDER = registerBlock("ruby_ladder",
+                new LadderBlock(AbstractBlock.Settings.create().nonOpaque().strength(3f).requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
+
 
 // public static final Block RUBY_CHEST = registerBlock("ruby_chest",
 //            new  ChestBlock(BlockEntityType<ChestBlock>? extends ChestBlockEntity>> AbstractChestBlock.Settings.create.strength(4f).requiresTool().sounds(BlockSoundGroup.AMETHYST_BLOCK)));
-//
-//    public static final Block RUBY_PRESSURE_PLATE = registerBlock("ruby_pressure_plate",
-//            new PressurePlateBlock(BlockSetType.IRON, AbstractBlock.Settings.create().strength(3f).requiresTool()));
 //
 //    public static final Block RUBY_DOOR = registerBlock("ruby_door",
 //            new DoorBlock(BlockSetType.IRON, AbstractBlock.Settings.create().strength(4f).requiresTool().nonOpaque()));
@@ -186,12 +196,30 @@ public class ModBlocks {
         NeoMusic.LOGGER.info("Registering Mod blocks for " + NeoMusic.MOD_ID);
 
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.BUILDING_BLOCKS).register(fabricItemGroupEntries -> {
+            fabricItemGroupEntries.add(ModBlocks.EMERALD_SLAB);
             fabricItemGroupEntries.add(ModBlocks.RUBY_BLOCK);
             fabricItemGroupEntries.add(ModBlocks.RUBY_STAIRS);
             fabricItemGroupEntries.add(ModBlocks.RUBY_SLAB);
             fabricItemGroupEntries.add(ModBlocks.RUBY_TRAPDOOR);
-            fabricItemGroupEntries.add(ModBlocks.NETHERITE_STAIRS);
             fabricItemGroupEntries.add(ModBlocks.NETHERITE_SLAB);
+        });
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(fabricItemGroupEntries -> {
+            fabricItemGroupEntries.add(ModBlocks.DEEPSLATE_RUBY_ORE);
+            fabricItemGroupEntries.add(ModBlocks.RUBY_ORE);
+        });
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(fabricItemGroupEntries -> {
+            fabricItemGroupEntries.add(ModItems.CRYSTALLIZED_HONEY);
+        });
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.REDSTONE).register(fabricItemGroupEntries -> {
+            fabricItemGroupEntries.add(ModBlocks.RUBY_BUTTON);
+            fabricItemGroupEntries.add(ModBlocks.RUBY_PRESSURE_PLATE);
+            fabricItemGroupEntries.add(ModBlocks.RUBY_TRAPDOOR);
+        });
+
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.COLORED_BLOCKS).register(fabricItemGroupEntries -> {
             fabricItemGroupEntries.add(ModBlocks.WHITE_CONCRETE_STAIRS);
             fabricItemGroupEntries.add(ModBlocks.WHITE_CONCRETE_SLAB);
             fabricItemGroupEntries.add(ModBlocks.ORANGE_CONCRETE_STAIRS);
@@ -226,18 +254,10 @@ public class ModBlocks {
             fabricItemGroupEntries.add(ModBlocks.BLACK_CONCRETE_SLAB);
         });
 
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL).register(fabricItemGroupEntries -> {
-            fabricItemGroupEntries.add(ModBlocks.DEEPSLATE_RUBY_ORE);
-            fabricItemGroupEntries.add(ModBlocks.RUBY_ORE);
-        });
-
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.FOOD_AND_DRINK).register(fabricItemGroupEntries -> {
-            fabricItemGroupEntries.add(ModItems.CRYSTALLIZED_HONEY);
-        });
-
-        ItemGroupEvents.modifyEntriesEvent(ItemGroups.REDSTONE).register(fabricItemGroupEntries -> {
-            fabricItemGroupEntries.add(ModBlocks.RUBY_BUTTON);
-            fabricItemGroupEntries.add(ModBlocks.RUBY_TRAPDOOR);
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.OPERATOR).register(fabricItemGroupEntries -> {
+            fabricItemGroupEntries.add(ModBlocks.NETHERITE_STAIRS);
+            fabricItemGroupEntries.add(ModBlocks.EMERALD_STAIRS);
+            fabricItemGroupEntries.add(Blocks.NETHER_PORTAL);
         });
     }
 }

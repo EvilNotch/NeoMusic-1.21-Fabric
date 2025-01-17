@@ -35,13 +35,51 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.DEEPSLATE_RUBY_ORE, multipleOreDrops(ModBlocks.DEEPSLATE_RUBY_ORE, ModItems.RAW_RUBY, 2, 5));
 
         addDrop(ModBlocks.RUBY_SLAB, slabDrops(ModBlocks.RUBY_SLAB));
+        addDrop(ModBlocks.NETHERITE_SLAB, slabDrops(ModBlocks.NETHERITE_SLAB));
+        addDrop(ModBlocks.EMERALD_SLAB, slabDrops(ModBlocks.EMERALD_SLAB));
+
         addDrop(ModBlocks.RUBY_STAIRS);
+        addDrop(ModBlocks.NETHERITE_STAIRS);
+        addDrop(ModBlocks.EMERALD_STAIRS);
 
         addDrop(ModBlocks.RUBY_BUTTON);
 
         addDrop(ModBlocks.RUBY_TRAPDOOR);
+        addDrop(ModBlocks.RUBY_PRESSURE_PLATE);
+        addDrop(ModBlocks.RUBY_LADDER);
 
-
+        addDrop(ModBlocks.WHITE_CONCRETE_STAIRS);
+        addDrop(ModBlocks.WHITE_CONCRETE_SLAB, slabDrops(ModBlocks.WHITE_CONCRETE_SLAB));
+        addDrop(ModBlocks.ORANGE_CONCRETE_STAIRS);
+        addDrop(ModBlocks.ORANGE_CONCRETE_SLAB, slabDrops(ModBlocks.ORANGE_CONCRETE_SLAB));
+        addDrop(ModBlocks.MAGENTA_CONCRETE_STAIRS);
+        addDrop(ModBlocks.MAGENTA_CONCRETE_SLAB, slabDrops(ModBlocks.MAGENTA_CONCRETE_SLAB));
+        addDrop(ModBlocks.LIGHT_BLUE_CONCRETE_STAIRS);
+        addDrop(ModBlocks.LIGHT_BLUE_CONCRETE_SLAB, slabDrops(ModBlocks.LIGHT_BLUE_CONCRETE_SLAB));
+        addDrop(ModBlocks.YELLOW_CONCRETE_STAIRS);
+        addDrop(ModBlocks.YELLOW_CONCRETE_SLAB, slabDrops(ModBlocks.YELLOW_CONCRETE_SLAB));
+        addDrop(ModBlocks.LIME_CONCRETE_STAIRS);
+        addDrop(ModBlocks.LIME_CONCRETE_SLAB, slabDrops(ModBlocks.LIME_CONCRETE_SLAB));
+        addDrop(ModBlocks.PINK_CONCRETE_STAIRS);
+        addDrop(ModBlocks.PINK_CONCRETE_SLAB, slabDrops(ModBlocks.PINK_CONCRETE_SLAB));
+        addDrop(ModBlocks.GRAY_CONCRETE_STAIRS);
+        addDrop(ModBlocks.GRAY_CONCRETE_SLAB, slabDrops(ModBlocks.GRAY_CONCRETE_SLAB));
+        addDrop(ModBlocks.LIGHT_GRAY_CONCRETE_STAIRS);
+        addDrop(ModBlocks.LIGHT_GRAY_CONCRETE_SLAB, slabDrops(ModBlocks.LIGHT_GRAY_CONCRETE_SLAB));
+        addDrop(ModBlocks.CYAN_CONCRETE_STAIRS);
+        addDrop(ModBlocks.CYAN_CONCRETE_SLAB, slabDrops(ModBlocks.CYAN_CONCRETE_SLAB));
+        addDrop(ModBlocks.PURPLE_CONCRETE_STAIRS);
+        addDrop(ModBlocks.PURPLE_CONCRETE_SLAB, slabDrops(ModBlocks.PURPLE_CONCRETE_SLAB));
+        addDrop(ModBlocks.BLUE_CONCRETE_STAIRS);
+        addDrop(ModBlocks.BLUE_CONCRETE_SLAB, slabDrops(ModBlocks.BLUE_CONCRETE_SLAB));
+        addDrop(ModBlocks.BROWN_CONCRETE_STAIRS);
+        addDrop(ModBlocks.BROWN_CONCRETE_SLAB, slabDrops(ModBlocks.BROWN_CONCRETE_SLAB));
+        addDrop(ModBlocks.GREEN_CONCRETE_STAIRS);
+        addDrop(ModBlocks.GREEN_CONCRETE_SLAB, slabDrops(ModBlocks.GREEN_CONCRETE_SLAB));
+        addDrop(ModBlocks.RED_CONCRETE_STAIRS);
+        addDrop(ModBlocks.RED_CONCRETE_SLAB, slabDrops(ModBlocks.RED_CONCRETE_SLAB));
+        addDrop(ModBlocks.BLACK_CONCRETE_STAIRS);
+        addDrop(ModBlocks.BLACK_CONCRETE_SLAB, slabDrops(ModBlocks.BLACK_CONCRETE_SLAB));
     }
     public LootTable.Builder multipleOreDrops(Block drop, Item item, float minDrops, float maxDrops) {
         RegistryWrapper.Impl<Enchantment> impl = this.registryLookup.getWrapperOrThrow(RegistryKeys.ENCHANTMENT);

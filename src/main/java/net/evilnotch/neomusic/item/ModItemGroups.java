@@ -25,8 +25,8 @@ public class ModItemGroups {
                         entries.add(ModBlocks.RUBY_STAIRS);
                         entries.add(ModBlocks.RUBY_TRAPDOOR);
                         entries.add(ModBlocks.RUBY_BUTTON);
+                        entries.add(ModBlocks.RUBY_PRESSURE_PLATE);
                     }).build());
-
 
     public static void RegisterItemGroups() {
         NeoMusic.LOGGER.info("A registry for all Mod Item Groups for " + NeoMusic.MOD_ID);

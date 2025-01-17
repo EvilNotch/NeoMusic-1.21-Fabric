@@ -14,7 +14,6 @@ public class NeoMusicClient implements ClientModInitializer {
     public void onInitializeClient() {
 
         BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.RUBY_TRAPDOOR, RenderLayer.getCutout());
-
-
+        BlockRenderLayerMap.INSTANCE.putBlock(ModBlocks.RUBY_LADDER, RenderLayer.getCutout());
     }
 }
