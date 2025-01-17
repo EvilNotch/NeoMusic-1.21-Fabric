@@ -1,11 +1,13 @@
 package net.evilnotch.neomusic;
 
+import com.ibm.icu.impl.ValidIdentifiers;
 import net.evilnotch.neomusic.block.ModBlocks;
 import net.evilnotch.neomusic.item.ModItemGroups;
 import net.evilnotch.neomusic.item.ModItems;
 import net.evilnotch.neomusic.world.gen.ModWorldGeneration;
 import net.fabricmc.api.ModInitializer;
 
+import net.minecraft.util.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

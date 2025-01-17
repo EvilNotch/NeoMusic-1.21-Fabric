@@ -1,5 +1,6 @@
 package net.evilnotch.neomusic.datagen;
 
+import net.evilnotch.neomusic.NeoMusic;
 import net.evilnotch.neomusic.block.ModBlocks;
 import net.evilnotch.neomusic.item.ModItems;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
@@ -7,10 +8,12 @@ import net.fabricmc.fabric.api.datagen.v1.provider.FabricModelProvider;
 import net.minecraft.block.AbstractBlock;
 import net.minecraft.block.Blocks;
 import net.minecraft.block.LadderBlock;
-import net.minecraft.data.client.BlockStateModelGenerator;
-import net.minecraft.data.client.ItemModelGenerator;
-import net.minecraft.data.client.Models;
+import net.minecraft.client.render.model.ModelBakeSettings;
+import net.minecraft.data.client.*;
 import net.minecraft.item.ArmorItem;
+import net.minecraft.util.math.Direction;
+
+import java.util.Properties;
 
 public class ModModelProvider extends FabricModelProvider {
     public ModModelProvider(FabricDataOutput output) {
@@ -21,6 +24,7 @@ public class ModModelProvider extends FabricModelProvider {
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RUBY_ORE);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.DEEPSLATE_RUBY_ORE);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RUBY_LADDER);
         BlockStateModelGenerator.BlockTexturePool RubyPool = blockStateModelGenerator.registerCubeAllModelTexturePool(ModBlocks.RUBY_BLOCK);
 
         RubyPool.slab(ModBlocks.RUBY_SLAB);
@@ -29,7 +33,6 @@ public class ModModelProvider extends FabricModelProvider {
         RubyPool.pressurePlate(ModBlocks.RUBY_PRESSURE_PLATE);
 
         blockStateModelGenerator.registerTrapdoor(ModBlocks.RUBY_TRAPDOOR);
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RUBY_LADDER);
 
         BlockStateModelGenerator.BlockTexturePool NetheritePool = blockStateModelGenerator.registerCubeAllModelTexturePool(Blocks.NETHERITE_BLOCK);
 
