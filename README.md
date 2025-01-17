@@ -1,1 +1,3 @@
 A mod for Fabric 1.21 that is just accessories to the new modpack Neostalgia!
+
+FEATURING CONCRETE BLOCKS, RUBIES, NEW MUSIC DISCS, NEW HELLFIRE CHESTPLATE AND UPCOMING ANTIHERO PROGRESSION!
